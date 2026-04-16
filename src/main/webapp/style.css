@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EBF4DD;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* MAIN CONTAINER */
+.index-container {
+    width: 400px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* HEADING */
+.index-container h2 {
+    margin-bottom: 25px;
+    color: #5A7863;
+}
+
+/* BUTTON STYLE FOR <a> TAG */
+.index-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background: #305669;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;   /* 🔥 removes underline */
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.index-btn:hover {
+    background: #084298;
+    transform: translateY(-2px);
+}
+/* container */
+.container {
+    width: 420px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    justify-content: center;   /* vertical center */
+    align-items: center;       /* horizontal center */
+    text-align: center;
+}
+
+/* heading */
+h2 {
+    text-align: center;
+    color: #5A7863;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* field */
+.field {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.field i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #5A7863;
+}
+
+.field input,
+.field select {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.field input.error,
+.field select.error {
+    border: 2px solid red;
+}
+
+/* tooltip */
+.tooltip {
+    display: none;
+    font-size: 12px;
+    color: red;
+    margin-top: 4px;
+    text-align: left;
+}
+
+
+button, .btn {
+    width: 100%;
+    padding: 12px;
+    background: #3B4953;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+
+button:hover, .btn:hover {
+    background: #084298;
+}
+
+
+/* PAGE TITLE */
+.page-title {
+    width: 100%;
+    margin: 20px 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    display: block;
+}
+
+/* MAIN WRAPPER */
+.appointment-wrapper {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+/* HORIZONTAL SCROLL ROW */
+.appointment-row {
+    display: flex;              /* 🔥 THIS WAS MISSING */
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;           /* horizontal scroll */
+    overflow-y: hidden;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+}
+
+/* CARD */
+.appointment-card {
+    min-width: 320px;           /* 🔥 important */
+    max-width: 320px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+    flex-shrink: 0;             /* 🔥 prevents wrapping */
+}
+
+/* hide ugly scrollbar (optional) */
+.appointment-row::-webkit-scrollbar {
+    height: 6px;
+}
+.appointment-row::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* STATUS */
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.status.scheduled {
+    background: #e8f7ee;
+    color: #198754;
+}
+
+.status.completed {
+    background: #fdeaea;
+    color: #dc3545;
+}
+
+/* COUNTDOWN */
+.timer {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* BUTTON */
+.video-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background: #adb5bd;
+    color: white;
+}
+
+.video-btn.active {
+    background: #0d6efd;
+}

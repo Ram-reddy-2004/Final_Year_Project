@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #EBF4DD;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-title {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #5A7863;
+    display: block;      /* 🔥 forces new line */
+}
+
+/* MAIN WRAPPER */
+.appointment-wrapper {
+    width: 100%;
+    padding: 0 30px 30px;
+}
+
+/* HORIZONTAL CARD ROW */
+.appointment-row {
+    display: flex;              /* REQUIRED */
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    scroll-behavior: smooth;
+}
+
+/* CARD */
+.appointment-card {
+    min-width: 320px;
+    max-width: 320px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    flex-shrink: 0;              /* 🔥 VERY IMPORTANT */
+    transition: transform 0.3s ease;
+}
+
+.appointment-card:hover {
+    transform: translateY(-6px);
+}
+
+/* STATUS */
+.status {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status.scheduled {
+    background: #e8f7ee;
+    color: #198754;
+}
+
+.status.live {
+    background: #e7f1ff;
+    color: #0d6efd;
+}
+
+.status.completed {
+    background: #fdeaea;
+    color: #dc3545;
+}
+
+/* TIMER */
+.timer {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* VIDEO BUTTON */
+.video-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #3B4953;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.video-btn.active {
+    background:#0d6efd;
+    cursor: pointer;
+}
+
+.review-btn,
+.report-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #198754;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.review-btn:hover,
+.report-btn:hover {
+    background: #157347;
+}
+
+
+/* SCROLLBAR */
+.appointment-row::-webkit-scrollbar {
+    height: 6px;
+}
+.appointment-row::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* ERROR BORDER */
+.error {
+    border: 2px solid red !important;
+}
+
+.tooltip {
+    display: none;
+    font-size: 12px;
+    color: red;
+    margin-top: 4px;
+}
+
+.btn-view {
+    padding: 6px 12px;
+    background: #1976d2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+
+.review-btn {
+	width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background: #577B8D;
+    color: white;
+}
+.review-btn:hover{
+	background: #0F828C;
+}
+
+/* REVIEW SUBMITTED STATUS */
+.review-success {
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: #198754;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.review-success .material-icons {
+    font-size: 18px;
+}
+

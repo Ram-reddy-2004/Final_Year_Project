@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 🔥 VERY IMPORTANT */
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f2f4f7;
+}
+
+/* ===== REVIEW PAGE CONTAINER ===== */
+.container {
+    width: 520px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ===== TITLE ===== */
+.container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #305669;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* ===== FORM ===== */
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ===== LABEL ===== */
+.container label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin-top: 6px;
+}
+
+/* ===== INPUT / SELECT / TEXTAREA (UNIFIED) ===== */
+.container input,
+.container select,
+.container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* SAME HEIGHT FOR INPUT & SELECT */
+.container input,
+.container select {
+    height: 44px;
+}
+
+/* READONLY INPUT */
+.container input[readonly] {
+    background: #f4f6f8;
+    color: #555;
+    cursor: not-allowed;
+}
+
+/* TEXTAREA */
+.container textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* SELECT DROPDOWN FIX */
+.container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
+    padding-right: 38px;
+}
+
+/* FOCUS EFFECT */
+.container input:focus,
+.container select:focus,
+.container textarea:focus {
+    outline: none;
+    border-color: #305669;
+    box-shadow: 0 0 0 2px rgba(48,86,105,0.15);
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.container button {
+    margin-top: 14px;
+    padding: 13px;
+    border-radius: 10px;
+    border: none;
+    background: #305669;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container button:hover {
+    background: #1f3f4e;
+    transform: translateY(-2px);
+}
+
+/* ===== SUCCESS BOX ===== */
+.success-box {
+    padding: 35px 20px;
+    border-radius: 14px;
+    
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+}
+
+.success-icon {
+    font-size: 64px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.success-box h3 {
+    font-size: 20px;
+    color: #198754;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.success-box p {
+    font-size: 14px;
+    color: #2f6f4e;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* REFILL BUTTON */
+.refill-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 26px;
+    border-radius: 8px;
+    background: #305669;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.refill-btn:hover {
+    background: #1f3f4e;
+}
+
+/* BACK BUTTON WRAPPER */
+.back-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #305669;
+    border: 2px solid #305669;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.back-btn:hover {
+    background: #305669;
+    color: #ffffff;
+}

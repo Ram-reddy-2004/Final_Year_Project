@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* PAGE */
+.page {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SECTION */
+.left {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+
+
+/* DARK OVERLAY (Tap-style) */
+.left::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #90AB8B;
+}
+
+/* CONTENT OVER SLIDER */
+.left-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* LOGO */
+.logo {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* HEADLINE */
+.headline {
+    font-size: 40px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+}
+
+.headline span {
+    color: #ffd54f;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    gap: 24px;
+}
+
+.feature-card {
+    background: rgba(255,255,255,0.15);
+    padding: 22px;
+    border-radius: 14px;
+    width: 220px;
+}
+
+.feature-card span {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.feature-card h4 {
+    margin-bottom: 6px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* RIGHT SECTION */
+.right {
+    width: 50%;
+    background: #F6F0D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN CARD */
+.login-card {
+    width: 360px;
+}
+
+.login-card h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.login-card p {
+    color: #666;
+    margin-bottom: 26px;
+}
+
+/* BUTTONS */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn.primary {
+    background: #3B4953;
+    color: white;
+}
+
+.btn.outline {
+    border: 2px solid #3B4953;
+    color: #3B4953;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}

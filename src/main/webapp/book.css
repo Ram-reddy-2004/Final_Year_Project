@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* PAGE */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #EBF4DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* WRAPPER */
+.page-wrapper {
+    width: 100%;
+    max-width: 460px;
+    padding: 20px;
+}
+
+/* TITLE */
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5A7863;
+}
+
+/* FORM CARD */
+.form-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* LABEL */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5A7863;
+    margin-bottom: 6px;
+}
+
+/* INPUT & SELECT */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1.5px solid #d0d7de;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    appearance: none;           /* 🔥 removes default dropdown */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* DROPDOWN ARROW (custom) */
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #fff;
+    background-image:
+        linear-gradient(45deg, transparent 50%, #5A7863 50%),
+        linear-gradient(135deg, #5A7863 50%, transparent 50%);
+    background-position:
+        calc(100% - 20px) calc(50% - 4px),
+        calc(100% - 14px) calc(50% - 4px);
+    background-size: 6px 6px;
+    background-repeat: no-repeat;
+}
+
+.form-group select option {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* FOCUS EFFECT */
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #5A7863;
+    box-shadow: 0 0 0 2px rgba(90,120,99,0.15);
+}
+
+/* ERROR SUPPORT (JS READY) */
+.form-group input.error,
+.form-group select.error {
+    border-color: red;
+    background: #fff5f5;
+}
+
+/* BUTTON */
+.primary-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    background: #3B4953;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #3B4953;
+    transform: translateY(-1px);
+}
+
+/* calendar input */
+input[type="date"] {
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* calendar icon color */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(30%) sepia(20%) saturate(300%) hue-rotate(90deg);
+    cursor: pointer;
+}
+
+/* SLOT CONFLICT MESSAGE */
+.slot-message {
+    margin-top: 18px;
+    padding: 14px 18px;
+    width: 100%;
+    max-width: 420px;
+    background: #fff3cd;          /* light yellow */
+    color: #856404;               /* dark yellow text */
+    border: 1px solid #ffeeba;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* highlight time dropdown */
+.slot-error,
+.warning {
+    border: 2px solid #ffc107 !important;
+}
+
+
+
+
+/* ===== CALENDAR ===== */
+.calendar-wrapper {
+    border: 1.5px solid #d0d7de;
+    border-radius: 12px;
+    padding: 12px;
+    background: #f8faf9;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5A7863;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn .material-icons {
+    font-size: 26px;
+    color: #5A7863;
+}
+
+/* WEEK DAY NAMES */
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5A7863;
+}
+
+.weekdays span {
+    padding: 4px 0;
+}
+
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.calendar-day {
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.calendar-day.active {
+    background: #ABE7B2;
+    color: #347928;
+    cursor: pointer;
+}
+
+.calendar-day.disabled {
+    background: #e0e0e0;
+    color: #888;
+}
+
+.calendar-day.selected {
+    background: #347928;
+    color: #fff;
+    font-weight: 600;
+}
+
+

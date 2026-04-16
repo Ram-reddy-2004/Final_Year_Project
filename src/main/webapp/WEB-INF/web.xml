@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+           http://xmlns.jcp.org/xml/ns/javaee
+           http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- USER SERVLETS -->
+    <servlet>
+        <servlet-name>UserRegisterServlet</servlet-name>
+        <servlet-class>servlet.UserRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserRegisterServlet</servlet-name>
+        <url-pattern>/UserRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <servlet-class>servlet.UserLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <url-pattern>/UserLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserDashboardServlet</servlet-name>
+        <servlet-class>servlet.UserDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDashboardServlet</servlet-name>
+        <url-pattern>/userDashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- DOCTOR SERVLETS -->
+    <servlet>
+        <servlet-name>DoctorRegisterServlet</servlet-name>
+        <servlet-class>servlet.DoctorRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorRegisterServlet</servlet-name>
+        <url-pattern>/DoctorRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DoctorLoginServlet</servlet-name>
+        <servlet-class>servlet.DoctorLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorLoginServlet</servlet-name>
+        <url-pattern>/DoctorLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DoctorDashboardServlet</servlet-name>
+        <servlet-class>servlet.DoctorDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorDashboardServlet</servlet-name>
+        <url-pattern>/doctorDashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- APPOINTMENT -->
+    <servlet>
+        <servlet-name>BookAppointmentServlet</servlet-name>
+        <servlet-class>servlet.BookAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookAppointmentServlet</servlet-name>
+        <url-pattern>/BookAppointmentServlet</url-pattern>
+    </servlet-mapping>
+     
+     
+     <!-- Load Doctors by Disease -->
+   <servlet>
+      <servlet-name>LoadDoctorsByDiseaseServlet</servlet-name>
+      <servlet-class>servlet.LoadDoctorsByDiseaseServlet</servlet-class>
+  </servlet>
+
+   <servlet-mapping>
+    <servlet-name>LoadDoctorsByDiseaseServlet</servlet-name>
+    <url-pattern>/LoadDoctorsByDiseaseServlet</url-pattern>
+  </servlet-mapping>
+
+
+<!-- Load Available Slots -->
+  <servlet>
+    <servlet-name>LoadAvailableSlotsServlet</servlet-name>
+    <servlet-class>servlet.LoadAvailableSlotsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoadAvailableSlotsServlet</servlet-name>
+    <url-pattern>/LoadAvailableSlotsServlet</url-pattern>
+  </servlet-mapping>
+
+     
+
+
+    <session-config>
+        <session-timeout>1200</session-timeout>
+    </session-config>
+
+</web-app>

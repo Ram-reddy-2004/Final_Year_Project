@@ -93,7 +93,9 @@ This system reduces manual effort, improves efficiency, and provides **remote he
 ### 9. Database Management Module  
 - MySQL-based structured database  
 - Maintains data integrity  
-- Fast retrieval & secure storage  
+- Fast retrieval & secure storage
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/794a27ac-e44a-48ee-a7d2-ce75f69788f4" />
+
 
 ---
 

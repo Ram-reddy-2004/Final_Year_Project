@@ -84,7 +84,11 @@ This system reduces manual effort, improves efficiency, and provides **remote he
 ### 8. Consultation Review Module  
 - Doctors upload reports  
 - Reports linked to appointments  
-- Patients can view/download reports  
+- Patients can view/download reports
+<img width="827" height="917" alt="image" src="https://github.com/user-attachments/assets/53f0ffad-4323-44f7-9b00-66664324763c" />
+<img width="429" height="357" alt="image" src="https://github.com/user-attachments/assets/3789574c-1265-4bdf-a84d-e2a18dad07df" />
+
+
 
 ### 9. Database Management Module  
 - MySQL-based structured database  

@@ -52,7 +52,9 @@ This system reduces manual effort, improves efficiency, and provides **remote he
 ### 3. Doctor Management Module  
 - Doctor registration with specialization  
 - Manage availability  
-- Dynamic doctor selection  
+- Dynamic doctor selection
+<img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/757104f6-bb4c-4417-86a0-15cc1e8b7787" />
+
 
 ### 4. Appointment Scheduling Module  
 - Book appointments (doctor, date, time slot)  

@@ -65,7 +65,11 @@ This system reduces manual effort, improves efficiency, and provides **remote he
 ### 5. Telemedicine Module  
 - Secure video consultation  
 - Accessible only during scheduled time  
-- Enables remote healthcare  
+- Enables remote healthcare
+<img width="521" height="288" alt="image" src="https://github.com/user-attachments/assets/a71de178-ee7c-4d0c-8d4b-9b393242ae54" />
+<img width="862" height="409" alt="image" src="https://github.com/user-attachments/assets/9254f8c9-9022-4e6c-b6e3-4558f73da87f" />
+
+
 
 ### 6. Patient Dashboard  
 - Book/view appointments  

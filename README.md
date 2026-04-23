@@ -27,11 +27,16 @@ This system reduces manual effort, improves efficiency, and provides **remote he
 - Password encryption using **BCrypt hashing**  
 - Session validation & access control
   <hr>
-  <img width="607" height="267" alt="image" src="https://github.com/user-attachments/assets/db23a623-d16d-488a-9b85-a352f8dc2a23" />
-  <img width="603" height="381" alt="image" src="https://github.com/user-attachments/assets/15357f50-d002-404e-a87d-61eea3b4189d" />
-  <img width="607" height="486" alt="image" src="https://github.com/user-attachments/assets/b53f14ca-f52f-4476-beca-bd34e54ab39a" />
-  <img width="603" height="587" alt="image" src="https://github.com/user-attachments/assets/3ffb4021-4169-42ad-a71c-8694a3437def" />
-
+<table>
+  <tr>
+    <td><img width="300" alt="image1" src="https://github.com/user-attachments/assets/db23a623-d16d-488a-9b85-a352f8dc2a23" /></td>
+    <td><img width="300" alt="image2" src="https://github.com/user-attachments/assets/15357f50-d002-404e-a87d-61eea3b4189d" /></td>
+  </tr>
+  <tr>
+    <td><img width="300" alt="image3" src="https://github.com/user-attachments/assets/b53f14ca-f52f-4476-beca-bd34e54ab39a" /></td>
+    <td><img width="300" alt="image4" src="https://github.com/user-attachments/assets/3ffb4021-4169-42ad-a71c-8694a3437def" /></td>
+  </tr>
+</table>
 
 
 

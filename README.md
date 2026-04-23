@@ -45,6 +45,9 @@ This system reduces manual effort, improves efficiency, and provides **remote he
 - Manage patient profiles  
 - Store personal & medical details  
 - View appointment history  
+<img width="427" height="206" alt="image" src="https://github.com/user-attachments/assets/828b0aa1-8229-4e49-8360-3716f184c796" />
+<img width="852" height="427" alt="image" src="https://github.com/user-attachments/assets/98416cdf-5881-446c-8daa-4be4f9c44466" />
+
 
 ### 3. Doctor Management Module  
 - Doctor registration with specialization  

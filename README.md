@@ -102,11 +102,21 @@ This system reduces manual effort, improves efficiency, and provides **remote he
 ## 📊 UML Diagrams  
 
 The system design includes:  
-- Use Case Diagram  
-- Class Diagram  
-- Sequence Diagram  
-- Activity Diagram  
-- ER Diagram  
+- Use Case Diagram
+  <img width="777" height="1025" alt="image" src="https://github.com/user-attachments/assets/61ba6d41-1263-4173-bb95-b9ee9a035ee7" />
+
+- Class Diagram
+  <img width="929" height="925" alt="image" src="https://github.com/user-attachments/assets/72370986-2797-4bf5-ac6d-5ac4ea3a2a85" />
+
+- Sequence Diagram
+  <img width="893" height="897" alt="image" src="https://github.com/user-attachments/assets/691a545f-d92e-4ba1-9d21-312c18703f12" />
+ 
+- Activity Diagram
+  <img width="660" height="955" alt="image" src="https://github.com/user-attachments/assets/88f8a9f2-613b-4705-ab66-c31b1c7d771c" />
+
+- ER Diagram
+  <img width="877" height="588" alt="image" src="https://github.com/user-attachments/assets/77390c39-c688-45d7-8f04-0bb2639dcf68" />
+
 
 ---
 

@@ -60,6 +60,7 @@ This system reduces manual effort, improves efficiency, and provides **remote he
 - Book appointments (doctor, date, time slot)  
 - Prevent scheduling conflicts  
 - Store & track appointments  
+<img width="702" height="910" alt="image" src="https://github.com/user-attachments/assets/cd5da92e-3543-42df-bcea-28f1c36b5252" />
 
 ### 5. Telemedicine Module  
 - Secure video consultation  
